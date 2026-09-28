@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: ss
-  server: 51.170.191.141
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: f/NpUKMY1ik7lr86dtH+rKX7U12gqCzzzdJYv7QZXk0=
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
   udp: true
 proxy-groups:
 - name: PROXIES
