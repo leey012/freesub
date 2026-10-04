@@ -4,25 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 VN 01 - xiaohe
+- name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 150.95.109.109
-  port: 2086
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  server: 70.34.255.101
+  port: 80
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.255.101
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 VN 01 - xiaohe
+  - 🇵🇱 PL 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 VN 01 - xiaohe
+  - 🇵🇱 PL 01 - xiaohe
 rules:
 - MATCH,PROXIES
