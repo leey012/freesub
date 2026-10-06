@@ -6,14 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  type: vless
   server: cookie.wookshop.ir
   port: 43233
   uuid: 568bcbbc-7a90-4164-8b5d-1c0bbeccfa38
@@ -25,6 +17,14 @@ proxies:
     path: /
     headers:
       Host: cookie.wookshop.ir
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
