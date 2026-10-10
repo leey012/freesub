@@ -34,12 +34,18 @@ proxies:
       Host: lucasjow.us.ci
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  server: 31.40.204.131
+  port: 443
+  uuid: 86b6c7ba-d613-4567-962a-acfdad5c22db
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
