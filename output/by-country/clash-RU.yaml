@@ -13,19 +13,26 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 104.21.70.223
+  server: 185.86.145.183
   port: 443
-  uuid: 527451fe-ee1f-4e6f-94ca-808f055f7c9b
+  uuid: 7ec9f26a-edec-4bf1-addd-700626df27c1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+  servername: cosmo-pulse.ru
   network: ws
   ws-opts:
-    path: /vl/ERYN0G44hia16zhR
+    path: /nl7ws
     headers:
-      Host: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+      Host: cosmo-pulse.ru
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: ss
+  server: 194.87.196.107
+  port: 40440
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vless
   server: 79.174.92.222
   port: 443
@@ -45,6 +52,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +61,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
