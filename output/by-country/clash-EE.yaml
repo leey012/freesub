@@ -34,7 +34,7 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 03 - xiaohe
   type: vless
-  server: ee10.zazazuza.ru
+  server: 77.72.85.246
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -48,7 +48,7 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 04 - xiaohe
   type: vless
-  server: 77.72.85.246
+  server: 77.72.85.247
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -72,15 +72,19 @@ proxies:
 - name: 🇪🇪 EE 06 - xiaohe
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 07 - xiaohe
   type: vless
-  server: 77.72.85.247
+  server: 77.72.85.246
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -108,7 +112,7 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 09 - xiaohe
   type: vless
-  server: 77.72.85.246
+  server: ee10.zazazuza.ru
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
