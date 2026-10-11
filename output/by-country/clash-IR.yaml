@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇷 IR 01 - xiaohe
+  type: vless
+  server: gadfather.zovip2.ir
+  port: 443
+  uuid: 9f9b66ba-e964-4e0e-be38-293134868a67
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: gadfather.zovip2.ir
+  network: ws
+  ws-opts:
+    path: /gropcdn?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: gadfather.zovip2.ir
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇷 IR 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇷 IR 01 - xiaohe
+rules:
+- MATCH,PROXIES
