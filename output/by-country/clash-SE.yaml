@@ -20,30 +20,32 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
-  server: 109.120.134.243
+  server: 172.67.74.90
   port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.cndyw.ggff.net
+  servername: cvhpyn.pages.dev
   network: ws
   ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=random
+    path: /fp=chrome+
     headers:
-      Host: free.cndyw.ggff.net
+      Host: cvhpyn.pages.dev
 - name: 🇸🇪 SE 03 - xiaohe
   type: vless
-  server: 732051t.se1.h1clayd.click
+  server: 77.110.97.245
   port: 443
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
-  servername: 732051t.se1.h1clayd.click
-  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇸🇪 SE 04 - xiaohe
   type: vless
   server: 94.143.231.146
