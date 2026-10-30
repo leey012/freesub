@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  type: vless
-  server: 194.55.239.89
-  port: 443
-  uuid: 073b7df7-5527-45a2-ba29-183b85c39071
+  type: ss
+  server: 130.49.189.54
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: hTTg7lwQMzpaF7KXpY3A8w
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: broadcast.liveflow.space
-  network: ws
-  ws-opts:
-    path: /live.stream.v1.Broadcast/
-    headers:
-      Host: broadcast.liveflow.space
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
   server: 194.87.143.165
@@ -26,22 +19,27 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
+  servername: 194.87.143.165
   network: ws
   ws-opts:
     path: /
     headers:
       Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: ss
-  server: 130.49.189.54
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: hTTg7lwQMzpaF7KXpY3A8w
+  type: vless
+  server: 46.254.19.164
+  port: 443
+  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
+  servername: wtb.tems.bet
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vless
-  server: lvi.su
+  server: 87.120.166.160
   port: 443
   uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
   udp: true
@@ -55,14 +53,14 @@ proxies:
       Host: lvi.su
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   type: ss
-  server: alb.rvpn.app
+  server: msk2.rvpn.app
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: hTTg7lwQMzpaF7KXpY3A8w
+  password: MODziWLa9qMuW-4yPa0rfw
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   type: vless
-  server: 87.120.166.160
+  server: lvi.su
   port: 443
   uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
   udp: true
