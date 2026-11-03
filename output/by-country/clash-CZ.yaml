@@ -8,7 +8,7 @@ proxies:
   type: vless
   server: 153.76.190.31
   port: 2083
-  uuid: d65fb384-5029-4edf-bdc7-0f5960600e3d
+  uuid: d6eb8a46-e6a4-4891-b22e-dfaa609c6afd
   udp: true
   tls: true
   skip-cert-verify: true
