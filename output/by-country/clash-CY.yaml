@@ -12,33 +12,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇾 CY 02 - xiaohe
-  type: vless
-  server: 195.137.226.133
-  port: 2083
-  uuid: 7f733b1a-6c00-48ac-ae3b-cbc178a9146e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nexostore.xnetaro.ir
-  network: ws
-  ws-opts:
-    path: /wss?TELEGRAM----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1----@VPNine1
-    headers:
-      Host: nexostore.xnetaro.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇾 CY 01 - xiaohe
-  - 🇨🇾 CY 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 CY 01 - xiaohe
-  - 🇨🇾 CY 02 - xiaohe
 rules:
 - MATCH,PROXIES
