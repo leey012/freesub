@@ -24,13 +24,18 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 03 - xiaohe
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: 145.63.143.205
+  port: 8444
+  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.6.1
+  servername: pl1.meshbeat.online
+  network: ws
+  ws-opts:
+    path: /api/v1/devices/10be32b380/telemetry
+    headers:
+      Host: pl1.meshbeat.online
 proxy-groups:
 - name: PROXIES
   type: select
